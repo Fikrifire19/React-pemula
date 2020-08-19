@@ -38,6 +38,7 @@ html {
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .header {
@@ -58,9 +59,72 @@ html {
   font-size: 1.8rem;
   font-family: "Bungee", sans-serif;
 
-  padding: 24px;
+  padding: 16px;
+  cursor: pointer;
 
   background: unset;
   border: unset;
   outline: unset;
+}
+
+.add {
+  padding: 16px;
+}
+
+.add-form {
+  display: flex;
+  align-items: flex-start;
+}
+
+.add-input {
+  background: unset;
+  border: unset;
+  padding: 0px 64px;
+
+  flex: 1;
+
+  border-bottom: 1px solid red;
+  outline: unset;
+
+  font-family: "Homemade Apple", sans-serif;
+  font-size: 16px;
+  text-transform: lowercase;
+}
+
+.add-btn {
+  font-size: 1.8rem;
+  font-family: "Bungee", sans-serif;
+
+  padding: 16px;
+  padding-right: unset;
+  cursor: pointer;
+
+  background: unset;
+  outline: unset;
+  border: unset;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo {
+  position: relative;
+
+  flex: 1 0 auto;
+  text-align: center;
+
+  min-height: 34px;
+  margin: 16px 0 0;
+  font-family: "Homemade Apple", sans-serif;
+  font-size: 24px;
+
+  border-bottom: 1 solid red;
+}
+
+.todo-text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
